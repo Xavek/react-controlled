@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Form from './Form';
 
 function App() {
+  const headingStyles = {
+    textAlign: "center"
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 style={headingStyles}>Magic Color Box</h1>
+      <Form/>
     </div>
   );
 }
 
 export default App;
+
+// First create a form to take the input
+// display the input as text first or realtime keyboard change
+// convert the given text into css background colour properties
